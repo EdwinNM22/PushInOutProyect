@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
-using CommunityToolkit.Maui; // Asegúrate de agregar este using
+using CommunityToolkit.Maui;
 
 namespace PushInOutProyect
 {
@@ -8,10 +8,10 @@ namespace PushInOutProyect
         public static MauiApp CreateMauiApp()
         {
             var builder = MauiApp.CreateBuilder();
+
             builder
                 .UseMauiApp<App>()
-                // Inicializar el .NET MAUI Community Toolkit
-                .UseMauiCommunityToolkit()
+                .UseMauiCommunityToolkit() // Toolkit necesario para huella
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");

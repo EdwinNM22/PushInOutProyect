@@ -9,7 +9,7 @@ namespace PushInOutProyect
             InitializeComponent();
 
             // Usamos NavigationPage para permitir la navegación
-            MainPage = new NavigationPage(new Register());
+            MainPage = new NavigationPage(new Login());
         }
 
         protected override Window CreateWindow(IActivationState? activationState)

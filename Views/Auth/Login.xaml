@@ -5,9 +5,10 @@
              Title="Login"
              BackgroundColor="#F5F5F5">
 
-    <StackLayout Padding="20">
+    <StackLayout Padding="20" Spacing="15">
         <Entry x:Name="emailEntry" Placeholder="Email" Keyboard="Email" />
         <Entry x:Name="passwordEntry" Placeholder="Contraseña" IsPassword="True" />
         <Button Text="Iniciar sesión" Clicked="OnLoginClicked" />
+        <Button Text="Iniciar con huella" Clicked="OnFingerprintClicked" />
     </StackLayout>
 </ContentPage>
